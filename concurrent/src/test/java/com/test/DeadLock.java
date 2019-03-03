@@ -9,6 +9,7 @@ public class DeadLock {
         Thread b = new Thread(new Lock2());
         a.start();
         b.start();
+        System.out.println("版本冲突测试");
     }
 }
 
